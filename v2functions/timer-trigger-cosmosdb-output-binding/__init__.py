@@ -39,5 +39,5 @@ def main(mytimer: func.TimerRequest, outdoc: func.Out[func.Document]):
         # Store output data using Cosmos DB output binding
         outdoc.set(func.Document.from_json(json.dumps(outdata)))
     except Exception as e:
-        logging.error('Error？？？！！:')
+        logging.error('Error？？！！:')
         logging.error(e)
